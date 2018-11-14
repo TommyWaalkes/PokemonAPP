@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Battle";
+}
+
+<h2>Battle</h2>
+
+<div style="display: flex; justify-content:space-between;">
+
+    @foreach (var poke in ViewBag.pl)
+    {
+    <div >
+        <h2>@poke.Name</h2>
+        <img src="@poke.ImageURL"/>
+        <p>Hit Points: @poke.Hp</p>
+        <p>Attack: @poke.Attack</p>
+        <p>Defense: @poke.Defense</p>
+        <p>Special Attack: @poke.SpecialAttack</p>
+        <p>Special Defense: @poke.SpecialDefense</p>
+        <p>Speed: @poke.Speed</p>
+        <p>Type 1: </p>
+        <br />
+    </div>
+    }
+</div>
+
+<form action="fight" method="get">
+    <input type="submit"value="FIGHT!"/>
+</form>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h2>Look Up Pokemon By Id</h2>
+<form action="Result" method="get">
+    <input type="number" name="pokeNum" />
+    <input type="submit" />
+
+</form>
+
+<h2>Setup a Battle</h2>
+
+<form action="Pokemon/Battle" method="get">
+    <input type="number" name="poke1" />
+    <input type="number" name="poke2" />
+    <input type="submit" />
+</form>
+
